@@ -22,7 +22,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter{
             return new HomeFragment();
         case 1:
             // TabTwo fragment activity
-            return new StatisticFragment();
+            return new StatisticsFragment();
         case 2:
             // TabThree fragment activity
             return new TabThree();
