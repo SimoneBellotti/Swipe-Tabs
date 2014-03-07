@@ -1,5 +1,9 @@
 package it.bellotti.android.swipetabs;
 
+import it.bellotti.android.swipetabs.fragments.HomeFragment;
+import it.bellotti.android.swipetabs.fragments.StatisticsFragment;
+import it.bellotti.android.swipetabs.fragments.TabThree;
+import it.bellotti.android.swipetabs.util.Constants;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -35,6 +39,27 @@ public class TabsPagerAdapter extends FragmentPagerAdapter{
 	public int getCount() {
 		// get item count - equal to number of tabs
 		return PAGES_COUNT;
+	}
+	
+	@Override
+	public CharSequence getPageTitle(int position) {
+
+	    String tabTitle;
+	    switch(position) {
+	        case 0:
+	            tabTitle = Constants.TABS[0];
+	            break;
+	        case 1:
+	            tabTitle = Constants.TABS[1];
+	            break;
+	        case 2:
+	            tabTitle = Constants.TABS[2];
+	            break;
+	        default:
+	            tabTitle = "Default Tab Title";
+	            break;
+	    }
+	    return tabTitle;
 	}
 
 }

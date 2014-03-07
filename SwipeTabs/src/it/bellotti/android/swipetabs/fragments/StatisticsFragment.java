@@ -1,5 +1,7 @@
-package it.bellotti.android.swipetabs;
+package it.bellotti.android.swipetabs.fragments;
 
+import it.bellotti.android.swipetabs.R;
+import it.bellotti.android.swipetabs.R.layout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
