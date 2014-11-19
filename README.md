@@ -1,4 +1,4 @@
 Swipe-Tabs
 ==========
 
-Swipe Tabs for Android
+A collection of ViewPager transformations.
