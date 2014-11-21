@@ -1,7 +1,6 @@
 package it.bellotti.android.swipetabs.fragments;
 
 import it.bellotti.android.swipetabs.R;
-import it.bellotti.android.swipetabs.R.layout;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,9 +13,7 @@ public class StatisticsFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View fRootView = inflater.inflate(R.layout.fragment_tab_two, container, false);
-         
-        return fRootView;
+        return inflater.inflate(R.layout.fragment_calendar, container, false);
     }
 
 }

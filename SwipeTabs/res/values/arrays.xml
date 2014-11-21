@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page_transformers">
+        <item>RotationPage</item>
+        <item>RotateUp</item>
+        <item>DepthPage</item>
+        <item>CubeOut</item>
+        <item>BackgroundToForeground</item>
+    </string-array>
+
+</resources>

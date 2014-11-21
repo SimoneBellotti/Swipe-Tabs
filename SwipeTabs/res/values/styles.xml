@@ -15,6 +15,19 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:dropDownListViewStyle">@style/SpinnerActionBar</item>
+
     </style>
+
+    <style name="MyActionBar" parent="android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_bg</item>
+    </style>
+
+    <style name="SpinnerActionBar" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">#86D0FF</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
 
 </resources>
