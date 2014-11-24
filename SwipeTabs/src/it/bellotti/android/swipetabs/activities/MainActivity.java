@@ -36,15 +36,6 @@ public class MainActivity
                     , getResources().getStringArray(R.array.page_transformers)), this);
         }
 
-        //If you want to add the stable ActionBar
-//        mActionBar.setHomeButtonEnabled(false);
-//        mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);       
-
-        // Adding Tabs for stabled ActionBar
-//        for (String tab_name : Constants.TABS) {
-//        	mActionBar.addTab(mActionBar.newTab().setText(tab_name)
-//                    .setTabListener(this));
-//        }
         viewPager.setAdapter(adapter);
 //        viewPager.setPageTransformer(true, new CubeInTransformer());
 //        viewPager.setPageTransformer(true, new RotationPageTransformer(165));
@@ -77,60 +68,63 @@ public class MainActivity
     @Override
     public boolean onNavigationItemSelected(int itemPosition, long itemId) {
         viewPager.setAdapter(new TabsPagerAdapter(this, getSupportFragmentManager()));
-//        viewPager.setPageTransformer(true, null);
+        viewPager.setPageTransformer(true, null);
         switch (itemPosition) {
-            case 0: //AlphaTransformer
+            case 0: //DefaultTransformer
+                viewPager.setPageTransformer(true, null);
+                return true;
+            case 1: //AlphaTransformer
                 viewPager.setPageTransformer(true, new AlphaTransformer());
                 return true;
-            case 1: //ScalePageTransformer
+            case 2: //ScalePageTransformer
                 viewPager.setPageTransformer(true, new ScalePageTransformer());
                 return true;
-            case 2: //ZoomInPageTransformer
+            case 3: //ZoomInPageTransformer
                 viewPager.setPageTransformer(true, new ZoomInPageTransformer());
                 return true;
-            case 3: //ZoomOutPageTransformer
+            case 4: //ZoomOutPageTransformer
                 viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
                 return true;
-            case 4: //ZoomOutSlideTransformer
+            case 5: //ZoomOutSlideTransformer
                 viewPager.setPageTransformer(true, new ZoomOutSlideTransformer());
                 return true;
-            case 5: //RotateUpTransformer
+            case 6: //RotateUpTransformer
                 viewPager.setPageTransformer(true, new RotateUpTransformer());
                 return true;
-            case 6: //RotateDownTransformer
+            case 7: //RotateDownTransformer
                 viewPager.setPageTransformer(true, new RotateDownTransformer());
                 return true;
-            case 7: //DepthPageTransformer
+            case 8: //DepthPageTransformer
                 viewPager.setPageTransformer(true, new DepthPageTransformer());
                 return true;
-            case 8: //CubeInTransformer
+            case 9: //CubeInTransformer
                 viewPager.setPageTransformer(true, new CubeInTransformer());
                 return true;
-            case 9: //CubeOutTransformer
+            case 10: //CubeOutTransformer
                 viewPager.setPageTransformer(true, new CubeOutTransformer());
                 return true;
-            case 10: //BackgroundToForegroundTransformer
+            case 11: //BackgroundToForegroundTransformer
                 viewPager.setPageTransformer(true, new BackgroundToForegroundTransformer());
                 return true;
-            case 11: //ForegroundToBackgroundTransformer
+            case 12: //ForegroundToBackgroundTransformer
                 viewPager.setPageTransformer(true, new ForegroundToBackgroundTransformer());
                 return true;
-            case 12: //FlipVerticalTransformer
+            case 13: //FlipVerticalTransformer
                 viewPager.setPageTransformer(true, new FlipVerticalTransformer());
                 return true;
-            case 13: //FlipHorizontalTransformer
+            case 14: //FlipHorizontalTransformer
                 viewPager.setPageTransformer(true, new FlipHorizontalTransformer());
                 return true;
-            case 14: //Accordion
+            case 15: //Accordion
                 viewPager.setPageTransformer(true, new AccordionTransformer());
                 return true;
-            case 15: //TabletTransformer
+            case 16: //TabletTransformer
                 viewPager.setPageTransformer(true, new TabletTransformer());
                 return true;
-            case 16: //StackTransformer
+            case 17: //StackTransformer
                 viewPager.setPageTransformer(true, new StackTransformer());
                 return true;
-            case 17: //RotationPageTransformer
+            case 18: //RotationPageTransformer
                 viewPager.setPageTransformer(true, new RotationPageTransformer());
                 return true;
             default:

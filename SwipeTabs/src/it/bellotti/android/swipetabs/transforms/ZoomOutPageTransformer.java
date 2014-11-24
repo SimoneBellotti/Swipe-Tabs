@@ -10,7 +10,6 @@ import android.view.View;
  * Time: 15.15
  */
 public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
-
     private static final float MIN_SCALE = 0.85f;
     private static final float MIN_ALPHA = 0.5f;
 
@@ -25,12 +24,12 @@ public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
         } else if (position <= 1) { // [-1,1]
             // Modify the default slide transition to shrink the page as well
             float scaleFactor = Math.max(MIN_SCALE, 1 - Math.abs(position));
-            float vertMargin = pageHeight * (1 - scaleFactor) / 2;
-            float horzMargin = pageWidth * (1 - scaleFactor) / 2;
+            float verticalMargin = pageHeight * (1 - scaleFactor) / 2;
+            float horizontalMargin = pageWidth * (1 - scaleFactor) / 2;
             if (position < 0) {
-                view.setTranslationX(horzMargin - vertMargin / 2);
+                view.setTranslationX(horizontalMargin - verticalMargin / 2);
             } else {
-                view.setTranslationX(-horzMargin + vertMargin / 2);
+                view.setTranslationX(-horizontalMargin + verticalMargin / 2);
             }
 
             // Scale the page down (between MIN_SCALE and 1)

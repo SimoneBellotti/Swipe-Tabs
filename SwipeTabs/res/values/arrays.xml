@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="page_transformers">
+        <item>DefaultTransformer</item>
         <item>AlphaPageTransformer</item>
         <item>ScalePageTransformer</item>
         <item>ZoomInTransformer</item>
@@ -8,10 +9,9 @@
         <item>ZoomOutSlideTransformer</item>
         <item>RotateUpTransformer</item>
         <item>RotateDownTransformer</item>
-        <item>RotationPageTransformer</item>
         <item>DepthPageTransformer</item>
-        <item>CubeOutTransformer</item>
         <item>CubeInTransformer</item>
+        <item>CubeOutTransformer</item>
         <item>BackgroundToForegroundTransformer</item>
         <item>ForegroundToBackgroundTransformer</item>
         <item>FlipVerticalTransformer</item>
@@ -19,7 +19,7 @@
         <item>AccordionTransformer</item>
         <item>TabletTransformer</item>
         <item>StackTransformer</item>
-        <item>RotationTransformer</item>
+        <item>RotationPageTransformer</item>
     </string-array>
 
 </resources>
