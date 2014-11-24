@@ -9,5 +9,5 @@
               android:gravity="center"
               android:textSize="16sp"
               android:textColor="@android:color/white"
-              android:background="@color/light_blue_a200"
+              android:background="@drawable/actionbar_dropdown_item_bg"
         />
