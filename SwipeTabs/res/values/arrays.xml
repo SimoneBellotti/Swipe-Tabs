@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="page_transformers">
-        <item>RotationPage</item>
-        <item>RotateUp</item>
-        <item>DepthPage</item>
-        <item>CubeOut</item>
-        <item>BackgroundToForeground</item>
+        <item>AlphaPageTransformer</item>
+        <item>ScalePageTransformer</item>
+        <item>ZoomInTransformer</item>
+        <item>ZoomOutTransformer</item>
+        <item>ZoomOutSlideTransformer</item>
+        <item>RotateUpTransformer</item>
+        <item>RotateDownTransformer</item>
+        <item>RotationPageTransformer</item>
+        <item>DepthPageTransformer</item>
+        <item>CubeOutTransformer</item>
+        <item>CubeInTransformer</item>
+        <item>BackgroundToForegroundTransformer</item>
+        <item>ForegroundToBackgroundTransformer</item>
+        <item>FlipVerticalTransformer</item>
+        <item>FlipHorizontalTransformer</item>
+        <item>AccordionTransformer</item>
+        <item>TabletTransformer</item>
+        <item>StackTransformer</item>
+        <item>RotationTransformer</item>
     </string-array>
 
 </resources>
