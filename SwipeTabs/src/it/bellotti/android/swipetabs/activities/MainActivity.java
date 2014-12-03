@@ -3,7 +3,7 @@ package it.bellotti.android.swipetabs.activities;
 import android.widget.ArrayAdapter;
 import it.bellotti.android.swipetabs.transforms.*;
 import it.bellotti.android.swipetabs.R;
-import it.bellotti.android.swipetabs.TabsPagerAdapter;
+import it.bellotti.android.swipetabs.adapters.TabsPagerAdapter;
 import android.os.Bundle;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
