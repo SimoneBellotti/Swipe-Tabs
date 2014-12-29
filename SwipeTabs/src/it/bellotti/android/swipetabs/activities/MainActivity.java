@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 
 public class MainActivity
-        extends FragmentActivity implements ActionBar.TabListener, ActionBar.OnNavigationListener {
+        extends FragmentActivity implements ActionBar.OnNavigationListener {
 
     private ViewPager viewPager;
 //    private TabsPagerAdapter mAdapter;
@@ -45,25 +45,25 @@ public class MainActivity
     }
 
 
-    @Override
-    public void onTabReselected(Tab tab, FragmentTransaction frag) {
-        // probably ignore this event
-    }
-
-    @Override
-    public void onTabSelected(Tab tab, FragmentTransaction frag) {
-         /*show the given tab
-         on tab selected
-         show respected fragment view*/
-        /* When the tab is selected, switch to the
-           corresponding page in the ViewPager.*/
-        viewPager.setCurrentItem(tab.getPosition());
-    }
-
-    @Override
-    public void onTabUnselected(Tab tab, FragmentTransaction arg1) {
-        // hide the given tab
-    }
+//    @Override
+//    public void onTabReselected(Tab tab, FragmentTransaction frag) {
+//        // probably ignore this event
+//    }
+//
+//    @Override
+//    public void onTabSelected(Tab tab, FragmentTransaction frag) {
+//         /*show the given tab
+//         on tab selected
+//         show respected fragment view*/
+//        /* When the tab is selected, switch to the
+//           corresponding page in the ViewPager.*/
+//        viewPager.setCurrentItem(tab.getPosition());
+//    }
+//
+//    @Override
+//    public void onTabUnselected(Tab tab, FragmentTransaction arg1) {
+//        // hide the given tab
+//    }
 
     @Override
     public boolean onNavigationItemSelected(int itemPosition, long itemId) {
